@@ -10,6 +10,7 @@ namespace EFExistingDBCodeFirstDemo
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
