@@ -18,16 +18,6 @@ namespace EFExistingDBCodeFirstDemo.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Author>()
-            //    .HasMany(e => e.Courses)
-            //    .WithOptional(e => e.Author)
-            //    .HasForeignKey(e => e.AuthorId);
-
-            //modelBuilder.Entity<Course>()
-            //    .HasMany(e => e.Tags)
-            //    .WithMany(e => e.Courses)
-            //    .Map(m => m.ToTable("TagCourses").MapLeftKey("Course_Id"));
-
             modelBuilder.Entity<Course>()
                 .ToTable("Courses");
 
