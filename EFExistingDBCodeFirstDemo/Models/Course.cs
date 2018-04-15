@@ -6,7 +6,6 @@ namespace EFExistingDBCodeFirstDemo.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Courses")]
     public partial class Course
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -25,7 +24,7 @@ namespace EFExistingDBCodeFirstDemo.Models
 
         public float FullPrice { get; set; }
 
-        public int? Author_Id { get; set; }
+        public int AuthorId { get; set; }
 
         public virtual Author Author { get; set; }
 

@@ -58,6 +58,14 @@
     <Compile Include="Migrations\201804141718236_InitialModel.Designer.cs">
       <DependentUpon>201804141718236_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804151542115_AddedFluentAPITableConfigurationsToContext.cs" />
+    <Compile Include="Migrations\201804151542115_AddedFluentAPITableConfigurationsToContext.Designer.cs">
+      <DependentUpon>201804151542115_AddedFluentAPITableConfigurationsToContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804151603250_TagAndAuthorNameHaveLengthAndNotNull.cs" />
+    <Compile Include="Migrations\201804151603250_TagAndAuthorNameHaveLengthAndNotNull.Designer.cs">
+      <DependentUpon>201804151603250_TagAndAuthorNameHaveLengthAndNotNull.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Course.cs" />
@@ -73,6 +81,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804141718236_InitialModel.resx">
       <DependentUpon>201804141718236_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804151542115_AddedFluentAPITableConfigurationsToContext.resx">
+      <DependentUpon>201804151542115_AddedFluentAPITableConfigurationsToContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804151603250_TagAndAuthorNameHaveLengthAndNotNull.resx">
+      <DependentUpon>201804151603250_TagAndAuthorNameHaveLengthAndNotNull.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
